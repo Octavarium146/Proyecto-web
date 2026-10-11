@@ -16,3 +16,7 @@ Proyecto educativo de un sitio web dedicado a la música y trayectoria de Jonas 
 - Flexbox y CSS Grid.
 - Bootstrap mediante CDN.
 - Google Fonts: Permanent Marker y Kalam.
+
+## Sitio web
+
+[Ver sitio publicado](https://octavarium146.github.io/Proyecto-web/)
