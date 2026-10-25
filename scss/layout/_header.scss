@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.encabezado {
+    @include fondo-header-footer($color-tarjeta, $espaciado);
+    border-bottom: $grosor-borde solid $color-oliva;
+}

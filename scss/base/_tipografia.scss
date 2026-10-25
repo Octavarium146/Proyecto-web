@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+
+.pagina {
+    font-family: $fuente-texto;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.titulo-principal, .titulo-seccion, .subtitulo, .titulo-disco {
+    color: $color-coral;
+    font-family: $fuente-titulos;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.titulo-principal {
+    font-size: 2.5rem;
+}
+
+.titulo-seccion {
+    font-size: 1.875rem;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+}
+
+.titulo-disco {
+    color: $color-oliva;
+    font-size: 1.25rem;
+}
+
+.leyenda, .nota-pie {
+    font-size: $tamano-texto-pequeno;
+}

@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *;
+
+.menu, .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $espaciado;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+}
+
+.navegacion {
+    padding: $espaciado;
+    background-color: rgba($color-fondo, $opacidad-fondo);
+}
+
+.navegacion {
+    width: 100%;
+    font-weight: 700;
+}
+
+.barra-principal {
+    width: 100%;
+    padding: 0;
+
+    .container-fluid {
+        padding: 0;
+        gap: $espaciado;
+    }
+
+    .nav-link.active {
+        color: $color-oliva;
+    }
+}
+
+
+
+.enlace, .barra-principal .enlace {
+    color: $color-cian;
+    transition: color $duracion-transicion;
+
+    &:hover, &:focus {
+        color: $color-texto;
+    }
+
+    &:active {
+        color: $color-coral;
+    }
+}

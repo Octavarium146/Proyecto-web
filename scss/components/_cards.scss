@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+
+.tarjeta {
+    color: $color-texto;
+    margin-bottom: $espaciado;
+    padding: $espaciado;
+    border: $grosor-borde solid $color-oliva;
+    background-color: $color-tarjeta;
+    transition: transform $duracion-transicion ease-out;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.discos, .entrevistas, .sesiones, .agenda {
+    align-items: stretch;
+}
+
+.documental, .entrevista, .sesion, .fecha {
+    margin-bottom: 0;
+}
+
+.entrevista .boton, .sesion .boton {
+    margin-top: auto;
+}
+
+.disco {
+    margin-bottom: 0;
+
+    .plataformas {
+        margin-top: auto;
+        gap: $espaciado-boton;
+    }
+
+    .boton {
+        flex: 1 1 $ancho-boton-disco;
+    }
+}

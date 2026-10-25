@@ -1,0 +1,13 @@
+// Archivo de entrada de Sass. Compila hacia styles/style.css.
+/* CSS generado desde este archivo. Realiza los cambios en los partials SCSS. */
+@use "base/base";
+@use "base/tipografia";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/nav";
+@use "layout/contenido";
+@use "components/cards";
+@use "components/imagenes";
+@use "components/buttons";
+@use "components/galeria";
+@use "layout/responsive";

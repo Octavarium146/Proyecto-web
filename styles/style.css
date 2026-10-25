@@ -1,0 +1,377 @@
+/* CSS generado desde este archivo. Realiza los cambios en los partials SCSS. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagina {
+  background-color: #171B1A;
+  color: #F5F1D9;
+}
+
+.parrafo, .titulo-principal, .titulo-seccion, .subtitulo, .titulo-disco, .lista, .figura, .nota-pie, .galeria figure {
+  margin: 0;
+}
+
+.pagina {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.titulo-principal, .titulo-seccion, .subtitulo, .titulo-disco {
+  color: #E9957D;
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+}
+
+.titulo-seccion {
+  font-size: 1.875rem;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+}
+
+.titulo-disco {
+  color: #AEBB83;
+  font-size: 1.25rem;
+}
+
+.leyenda, .nota-pie {
+  font-size: 1rem;
+}
+
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #252E29;
+  background-image: url("../img/portada-da-knowledge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid #AEBB83;
+}
+
+.pie {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #252E29;
+  background-image: url("../img/portada-da-knowledge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nota-pie {
+  padding: 20px;
+  background-color: rgba(23, 27, 26, 0.65);
+}
+
+.menu, .plataformas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.navegacion {
+  padding: 20px;
+  background-color: rgba(23, 27, 26, 0.65);
+}
+
+.navegacion {
+  width: 100%;
+  font-weight: 700;
+}
+
+.barra-principal {
+  width: 100%;
+  padding: 0;
+}
+.barra-principal .container-fluid {
+  padding: 0;
+  gap: 20px;
+}
+.barra-principal .nav-link.active {
+  color: #AEBB83;
+}
+
+.enlace, .barra-principal .enlace {
+  color: #A9E8E0;
+  transition: color 0.2s;
+}
+.enlace:hover, .enlace:focus, .barra-principal .enlace:hover, .barra-principal .enlace:focus {
+  color: #F5F1D9;
+}
+.enlace:active, .barra-principal .enlace:active {
+  color: #E9957D;
+}
+
+.contenido {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.seccion, .disco, .figura, .documental-resumen, .entrevista, .sesion, .fecha {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.presentacion, .discos, .perfil-jonas, .documental, .entrevistas, .sesiones, .agenda {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.presentacion {
+  grid-template-areas: "introduccion" "historia" "datos" "foto";
+}
+
+.inicio-introduccion {
+  grid-area: introduccion;
+}
+
+.inicio-historia {
+  grid-area: historia;
+}
+
+.inicio-datos {
+  grid-area: datos;
+}
+
+.inicio-foto {
+  grid-area: foto;
+}
+
+.seccion {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.presentacion .seccion, .perfil-jonas .seccion {
+  margin-bottom: 0;
+}
+
+.lista {
+  padding-left: 25px;
+}
+
+.perfil-jonas {
+  grid-template-areas: "biografia" "retrato" "trayectoria" "colaboraciones";
+  margin: 20px 0 30px;
+}
+
+.perfil-biografia {
+  grid-area: biografia;
+}
+
+.perfil-retrato {
+  grid-area: retrato;
+  align-items: center;
+  padding: 20px;
+}
+
+.perfil-retrato .imagen {
+  max-width: 400px;
+}
+
+.perfil-trayectoria {
+  grid-area: trayectoria;
+}
+
+.perfil-colaboraciones {
+  grid-area: colaboraciones;
+}
+
+.dato-contacto {
+  overflow-wrap: anywhere;
+}
+
+.tarjeta {
+  color: #F5F1D9;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #AEBB83;
+  background-color: #252E29;
+  transition: transform 0.2s ease-out;
+}
+.tarjeta:hover {
+  transform: translateY(-4px);
+}
+
+.discos, .entrevistas, .sesiones, .agenda {
+  align-items: stretch;
+}
+
+.documental, .entrevista, .sesion, .fecha {
+  margin-bottom: 0;
+}
+
+.entrevista .boton, .sesion .boton {
+  margin-top: auto;
+}
+
+.disco {
+  margin-bottom: 0;
+}
+.disco .plataformas {
+  margin-top: auto;
+  gap: 10px;
+}
+.disco .boton {
+  flex: 1 1 120px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.imagen {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.portada {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.boton, .control {
+  border: 1px solid #AEBB83;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.enlace:focus, .boton:focus, .barra-principal .control:focus, .galeria .control-galeria:focus, .galeria-enlace:focus {
+  outline: 2px solid #A9E8E0;
+}
+
+.boton, .control {
+  color: #F5F1D9;
+  background-color: #252E29;
+}
+
+.boton {
+  padding: 10px 20px;
+  font-family: "Kalam", sans-serif;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.boton:hover, .boton:focus, .control:hover, .control:focus {
+  color: #171B1A;
+  background-color: #A9E8E0;
+}
+
+.btn.boton:active, .control:active {
+  color: #171B1A;
+  background-color: #E9957D;
+}
+
+.galeria, .video-musical {
+  width: 100%;
+  max-width: 600px;
+}
+
+.galeria-imagen {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  background-color: #252E29;
+}
+
+.galeria-enlace {
+  display: block;
+}
+
+.galeria-enlace, .control-galeria {
+  transition: opacity 0.2s;
+}
+
+.galeria-enlace:hover, .galeria-enlace:focus {
+  opacity: 0.85;
+}
+
+.galeria-enlace:active, .control-galeria:active {
+  opacity: 0.65;
+}
+
+.control-galeria:hover, .control-galeria:focus {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #171B1A;
+}
+
+@media (min-width: 768px) {
+  .presentacion, .discos, .perfil-jonas, .documental, .entrevistas, .sesiones, .agenda {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .presentacion {
+    grid-template-areas: "introduccion introduccion" "historia datos" "foto foto";
+  }
+  .perfil-jonas {
+    grid-template-areas: "biografia retrato" "trayectoria colaboraciones";
+  }
+}
+@media (min-width: 1024px) {
+  .encabezado, .pie {
+    flex-direction: row;
+  }
+  .navegacion {
+    width: auto;
+  }
+  .contenido {
+    width: 90%;
+  }
+  .presentacion {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "introduccion introduccion" "historia datos" "foto foto";
+  }
+  .discos, .agenda {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .documental, .entrevistas, .sesiones {
+    grid-template-columns: 1fr 1fr;
+  }
+  .perfil-jonas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "biografia retrato" "trayectoria colaboraciones";
+  }
+  .perfil-trayectoria, .perfil-colaboraciones {
+    align-self: stretch;
+  }
+}

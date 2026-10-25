@@ -1,0 +1,16 @@
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pagina {
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+.parrafo, .titulo-principal, .titulo-seccion, .subtitulo, .titulo-disco, .lista, .figura, .nota-pie, .galeria figure {
+    margin: 0;
+}

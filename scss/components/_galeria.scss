@@ -1,0 +1,37 @@
+@use "../utilities/variables" as *;
+
+.galeria, .video-musical {
+    width: 100%;
+    max-width: $ancho-imagen;
+}
+
+.galeria-imagen {
+    width: 100%;
+    height: $alto-galeria;
+    object-fit: contain;
+    background-color: $color-tarjeta;
+}
+
+.galeria-enlace {
+    display: block;
+}
+
+.galeria-enlace, .control-galeria {
+    transition: opacity $duracion-transicion;
+}
+
+.galeria-enlace:hover, .galeria-enlace:focus {
+    opacity: $opacidad-hover;
+}
+
+.galeria-enlace:active, .control-galeria:active {
+    opacity: $opacidad-activa;
+}
+
+.control-galeria:hover, .control-galeria:focus {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: $color-fondo;
+}

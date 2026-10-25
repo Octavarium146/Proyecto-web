@@ -1,0 +1,92 @@
+@use "../utilities/variables" as *;
+
+.contenido {
+    width: 100%;
+    margin: 0 auto;
+    padding: $espaciado;
+}
+
+.seccion, .disco, .figura, .documental-resumen, .entrevista, .sesion, .fecha {
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado-pequeno;
+}
+
+.presentacion, .discos, .perfil-jonas, .documental, .entrevistas, .sesiones, .agenda {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: $espaciado;
+}
+
+.presentacion {
+    grid-template-areas:
+        "introduccion"
+        "historia"
+        "datos"
+        "foto";
+}
+
+.inicio-introduccion {
+    grid-area: introduccion;
+}
+
+.inicio-historia {
+    grid-area: historia;
+}
+
+.inicio-datos {
+    grid-area: datos;
+}
+
+.inicio-foto {
+    grid-area: foto;
+}
+
+.seccion {
+    padding: $espaciado;
+    margin-bottom: $separacion-secciones;
+}
+
+.presentacion .seccion, .perfil-jonas .seccion {
+    margin-bottom: 0;
+}
+
+.lista {
+    padding-left: 25px;
+}
+
+.perfil-jonas {
+    grid-template-areas:
+        "biografia"
+        "retrato"
+        "trayectoria"
+        "colaboraciones";
+    margin: $espaciado 0 $separacion-secciones;
+}
+
+.perfil-biografia {
+    grid-area: biografia;
+}
+
+.perfil-retrato {
+    grid-area: retrato;
+    align-items: center;
+    padding: $espaciado;
+}
+
+.perfil-retrato .imagen {
+    max-width: 400px;
+}
+
+.perfil-trayectoria {
+    grid-area: trayectoria;
+}
+
+.perfil-colaboraciones {
+    grid-area: colaboraciones;
+}
+
+.dato-contacto {
+    overflow-wrap: anywhere;
+}

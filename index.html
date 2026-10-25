@@ -3,22 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Sitio informativo dedicado a la música y trayectoria del artista Jonas Sanche.">
+        <meta name="description" content="Jonas Sanche, rapero chileno de Antofagasta y criado en La Florida. Recorre su trayectoria, discografía, videoclips y presentaciones en vivo.">
         <!-- Fuente -->
         <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet">
-        <!-- Bootstrap -->
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- CSS -->
-        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/style.css">
         <!-- Titulo -->
         <title>Jonas Sanche | Artista y rapero</title>
     </head>
     <body class="pagina">
         <header class="encabezado">
+            <!-- Navbar de Bootstrap -->
             <nav class="navbar navbar-expand-lg barra-principal" data-bs-theme="dark" aria-label="Navegación principal">
                 <div class="container-fluid">
                     <a class="navbar-brand enlace" href="index.html" aria-label="Jonas Sanche: inicio">
-                        <img class="logo" src="img/firma.png" alt="Firma de Jonas Sanche" width="150" height="100">
+                        <img class="logo" src="img/firma-jonas-sanche.png" alt="Firma de Jonas Sanche" width="150" height="100">
                     </a>
                     <button class="navbar-toggler control" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir o cerrar menú">
                         <span class="navbar-toggler-icon"></span>
@@ -37,7 +38,9 @@
         </header>
         <main class="contenido">
             <h1 class="titulo-principal">Jonas Sanche</h1>
+            <!-- CSS Grid -->
             <article class="presentacion">
+                <!-- Flexbox -->
                 <section class="seccion inicio-introduccion">
                     <h2 class="titulo-seccion">Rap chileno, de La Florida al micrófono</h2>
                     <p class="parrafo">Jonas Sanche es un rapero chileno nacido en Antofagasta, criado en La Florida. Conoce su trayectoria y recorre una discografía que incluye Verdades, la voz de la avenida, DA KNOWLEDGE y LEGEND.</p>
@@ -60,12 +63,13 @@
                 </section>
                 <section class="seccion inicio-foto">
                     <h3 class="subtitulo">Jonas Sanche en imágenes</h3>
+                    <!-- Carrusel de Bootstrap -->
                     <div id="galeria-jonas" class="carousel slide galeria" role="region" aria-label="Galería de Jonas Sanche">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <figure>
                                     <a href="pages/sobre-mi.html" class="galeria-enlace">
-                                        <img class="galeria-imagen" src="img/jonas-2.png" alt="Jonas Sanche posando con gorra y camiseta blanca" width="739" height="415">
+                                        <img class="galeria-imagen" src="img/retrato-jonas-sanche-album-27.png" alt="Jonas Sanche posando con gorra y camiseta blanca" width="739" height="415">
                                     </a>
                                     <figcaption class="leyenda">Retrato para el álbum «27» · <a href="https://coolmusicchile.cl/2019/03/jonas-sanche-presenta-27/" class="enlace" target="_blank" rel="noopener noreferrer">Cool Music Chile</a></figcaption>
                                 </figure>
@@ -81,7 +85,7 @@
                             <div class="carousel-item">
                                 <figure>
                                     <a href="pages/sobre-mi.html" class="galeria-enlace">
-                                        <img class="galeria-imagen" src="img/jonas-tierra-parlante.jpg" alt="Jonas Sanche con polerón rojo y lentes frente al muro de ladrillos de Red Bull" width="1500" height="1000">
+                                        <img class="galeria-imagen" src="img/jonas-sanche-tierra-parlante.jpg" alt="Jonas Sanche con polerón rojo y lentes frente al muro de ladrillos de Red Bull" width="1500" height="1000">
                                     </a>
                                     <figcaption class="leyenda">Tierra Parlante · <a href="https://www.redbull.com/cl-es/tierra-parlante-jonas-sanche" class="enlace" target="_blank" rel="noopener noreferrer">Red Bull</a></figcaption>
                                 </figure>
@@ -125,6 +129,7 @@
                 </ul>
             </nav>
         </footer>
+        <!-- JavaScript de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

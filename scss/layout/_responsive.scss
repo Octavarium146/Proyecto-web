@@ -1,0 +1,52 @@
+@use "../utilities/variables" as *;
+
+@media (min-width: $pantalla-tablet) {
+    .presentacion, .discos, .perfil-jonas, .documental, .entrevistas, .sesiones, .agenda {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .presentacion {
+        grid-template-areas:
+            "introduccion introduccion"
+            "historia datos"
+            "foto foto";
+    }
+    .perfil-jonas {
+        grid-template-areas:
+            "biografia retrato"
+            "trayectoria colaboraciones";
+    }
+}
+
+@media (min-width: $pantalla-escritorio) {
+    .encabezado, .pie {
+        flex-direction: row;
+    }
+    .navegacion {
+        width: auto;
+    }
+    .contenido {
+        width: 90%;
+    }
+    .presentacion {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "introduccion introduccion"
+            "historia datos"
+            "foto foto";
+    }
+    .discos, .agenda {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .documental, .entrevistas, .sesiones {
+        grid-template-columns: 1fr 1fr;
+    }
+    .perfil-jonas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "biografia retrato"
+            "trayectoria colaboraciones";
+    }
+    .perfil-trayectoria, .perfil-colaboraciones {
+        align-self: stretch;
+    }
+}

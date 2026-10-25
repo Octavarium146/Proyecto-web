@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+
+.logo {
+    width: $ancho-logo;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.imagen {
+    width: 100%;
+    max-width: $ancho-imagen;
+    height: auto;
+}
+
+.portada {
+    width: 100%;
+    max-width: $ancho-portada;
+    height: auto;
+    margin: 0 auto;
+}

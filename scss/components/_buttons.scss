@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+%control-interactivo {
+    border: $grosor-borde solid $color-oliva;
+    transition: color $duracion-transicion, background-color $duracion-transicion;
+}
+
+.enlace:focus, .boton:focus, .barra-principal .control:focus, .galeria .control-galeria:focus, .galeria-enlace:focus {
+    outline: $grosor-foco solid $color-cian;
+}
+
+.boton, .control {
+    @extend %control-interactivo;
+    color: $color-texto;
+    background-color: $color-tarjeta;
+}
+
+.boton {
+    padding: $espaciado-boton $espaciado;
+    font-family: $fuente-texto;
+    font-size: $tamano-texto-pequeno;
+    align-self: flex-start;
+}
+
+.boton:hover, .boton:focus, .control:hover, .control:focus {
+    color: $color-fondo;
+    background-color: $color-cian;
+}
+
+.btn.boton:active, .control:active {
+    color: $color-fondo;
+    background-color: $color-coral;
+}

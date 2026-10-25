@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.pie {
+    @include fondo-header-footer($color-tarjeta, $espaciado);
+}
+
+.nota-pie {
+    padding: $espaciado;
+    background-color: rgba($color-fondo, $opacidad-fondo);
+}

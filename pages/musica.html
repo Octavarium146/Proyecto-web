@@ -3,21 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explora la discografía de Jonas Sanche: álbumes, EP, mixtapes y grabaciones en vivo, desde Verdades hasta JONASTY TAPES 2.">
         <!-- Fuente -->
         <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet">
-        <!-- Bootstrap -->
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
         <!-- CSS -->
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/style.css">
         <!-- Titulo -->
         <title>Música | Jonas Sanche</title>
     </head>
     <body class="pagina">
         <header class="encabezado">
+            <!-- Navbar de Bootstrap -->
             <nav class="navbar navbar-expand-lg barra-principal" data-bs-theme="dark" aria-label="Navegación principal">
                 <div class="container-fluid">
                     <a class="navbar-brand enlace" href="../index.html" aria-label="Jonas Sanche: inicio">
-                        <img class="logo" src="../img/firma.png" alt="Firma de Jonas Sanche" width="150" height="100">
+                        <img class="logo" src="../img/firma-jonas-sanche.png" alt="Firma de Jonas Sanche" width="150" height="100">
                     </a>
                     <button class="navbar-toggler control" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir o cerrar menú">
                         <span class="navbar-toggler-icon"></span>
@@ -35,15 +39,17 @@
             </nav>
         </header>
         <main class="contenido">
-            <h1 class="titulo-principal">Jonas Sanche</h1>
+            <h1 class="titulo-principal">Discografía de Jonas Sanche</h1>
             <section class="seccion">
                 <h2 class="titulo-seccion">La música de Jonas Sanche</h2>
                 <p class="parrafo">Álbumes, mixtapes, EP y grabaciones en vivo, ordenados por año de publicación: de Verdades, la voz de la avenida (2012) a JONASTY TAPES 2 (2026).</p>
             </section>
             <section class="seccion">
                 <h3 class="subtitulo">Discografía</h3>
+                <!-- CSS Grid y AOS -->
                 <div class="discos">
-                    <article class="card tarjeta disco">
+                    <!-- Tarjetas de Bootstrap y Flexbox -->
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="0">
                         <img class="card-img-top portada" src="../img/portada-verdades.jpg" alt="Portada de Verdades, la voz de la avenida" width="600" height="600">
                         <h4 class="card-title titulo-disco">Verdades, la voz de la avenida (2012)</h4>
                         <p class="card-text parrafo">Álbum debut. Incluye «Días Grises», con Ceaese y Yaero; «Estar Así», con Chystemc; y «Llevo Dependiendo».</p>
@@ -52,7 +58,7 @@
                             <a href="https://music.apple.com/us/album/verdades-la-voz-de-la-avenida/1687649477" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="100">
                         <img class="card-img-top portada" src="../img/portada-cream-gang.jpg" alt="Portada de Cream Gang" width="600" height="600">
                         <h4 class="card-title titulo-disco">Cream Gang (2013)</h4>
                         <p class="card-text parrafo">Álbum colaborativo junto a Ceaese.</p>
@@ -61,7 +67,7 @@
                             <a href="https://music.apple.com/us/album/cream-gang/1445763072" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="200">
                         <img class="card-img-top portada" src="../img/portada-jonasty-tapes.jpg" alt="Portada de Jonasty Tapes" width="600" height="600">
                         <h4 class="card-title titulo-disco">Jonasty Tapes (2016)</h4>
                         <p class="card-text parrafo">Mixtape de 21 canciones que reúne material de la etapa posterior a su debut.</p>
@@ -70,7 +76,7 @@
                             <a href="https://music.apple.com/cl/album/jonasty-tapes/1680595444" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="0">
                         <img class="card-img-top portada" src="../img/portada-27.jpg" alt="Portada de 27" width="600" height="600">
                         <h4 class="card-title titulo-disco">27 (2019)</h4>
                         <p class="card-text parrafo">Segundo álbum solista. Incluye «Piso 13», «Tesla», «Máximo Gorki» y «Te busqué».</p>
@@ -79,7 +85,7 @@
                             <a href="https://music.apple.com/cl/album/27/1679462820" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="100">
                         <img class="card-img-top portada" src="../img/portada-27-en-vivo.jpg" alt="Portada de 27 (En Vivo)" width="600" height="600">
                         <h4 class="card-title titulo-disco">27 (En Vivo) (2020)</h4>
                         <p class="card-text parrafo">Álbum en vivo vinculado al repertorio de 27.</p>
@@ -88,7 +94,7 @@
                             <a href="https://music.apple.com/us/album/27-en-vivo/1506817522" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="200">
                         <img class="card-img-top portada" src="../img/portada-aire.jpg" alt="Portada de Aire" width="600" height="600">
                         <h4 class="card-title titulo-disco">Aire (2020)</h4>
                         <p class="card-text parrafo">EP que incluye «My Mind», «Diferencias», «Para mí» y «Calma».</p>
@@ -97,7 +103,7 @@
                             <a href="https://music.apple.com/us/album/aire-ep/1519366871" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="0">
                         <img class="card-img-top portada" src="../img/portada-crack.jpg" alt="Portada de C.R.A.C.K" width="600" height="600">
                         <h4 class="card-title titulo-disco">C.R.A.C.K (2020)</h4>
                         <p class="card-text parrafo">EP colaborativo junto al rapero venezolano Lil Supa.</p>
@@ -106,7 +112,7 @@
                             <a href="https://music.apple.com/us/album/c-r-a-c-k-ep/1539008194" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="100">
                         <img class="card-img-top portada" src="../img/portada-da-knowledge.jpg" alt="Portada de DA KNOWLEDGE" width="600" height="600">
                         <h4 class="card-title titulo-disco">DA KNOWLEDGE (2022)</h4>
                         <p class="card-text parrafo">Álbum producido por Macrodee. Reúne diez canciones con invitados como Antioch, Chystemc, Elbruto CHR y Brown Sugar.</p>
@@ -115,7 +121,7 @@
                             <a href="https://music.apple.com/us/album/da-knowledge/1619803031" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="200">
                         <img class="card-img-top portada" src="../img/portada-legend.jpg" alt="Portada de LEGEND" width="600" height="600">
                         <h4 class="card-title titulo-disco">LEGEND (2023)</h4>
                         <p class="card-text parrafo">Álbum con colaboraciones de artistas como Dano, Lil Supa y Akapellah.</p>
@@ -124,7 +130,7 @@
                             <a href="https://music.apple.com/us/album/legend/1702608522" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="0">
                         <img class="card-img-top portada" src="../img/portada-david.jpg" alt="Portada de DAVID" width="600" height="600">
                         <h4 class="card-title titulo-disco">DAVID (2024)</h4>
                         <p class="card-text parrafo">EP de cinco canciones, entre ellas «Morder el polvo», «Sin miedo a morir» y «Dejavú».</p>
@@ -133,7 +139,7 @@
                             <a href="https://music.apple.com/us/album/david-ep/1737505250" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="100">
                         <img class="card-img-top portada" src="../img/portada-baby-nasty.jpg" alt="Portada de BABY NASTY" width="600" height="600">
                         <h4 class="card-title titulo-disco">BABY NASTY (2025)</h4>
                         <p class="card-text parrafo">Álbum junto a Soulnastyy, con invitados como DrefQuila, Movimiento Original, Penyair y Sick Jacken.</p>
@@ -142,7 +148,7 @@
                             <a href="https://music.apple.com/us/album/baby-nasty/1799941917" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="200">
                         <img class="card-img-top portada" src="../img/portada-iv-mundo.jpg" alt="Portada de IV MUNDO" width="600" height="600">
                         <h4 class="card-title titulo-disco">IV MUNDO (2025)</h4>
                         <p class="card-text parrafo">Álbum colaborativo junto al rapero argentino Urbanse.</p>
@@ -151,7 +157,7 @@
                             <a href="https://music.apple.com/us/album/iv-mundo/1847738123" class="btn boton" target="_blank" rel="noopener noreferrer">Apple Music</a>
                         </div>
                     </article>
-                    <article class="card tarjeta disco">
+                    <article class="card tarjeta disco" data-aos="fade-up" data-aos-delay="0">
                         <img class="card-img-top portada" src="../img/portada-jonasty-tapes-2.jpg" alt="Portada de JONASTY TAPES 2" width="600" height="600">
                         <h4 class="card-title titulo-disco">JONASTY TAPES 2 (2026)</h4>
                         <p class="card-text parrafo">Segunda entrega de Jonasty Tapes, con colaboraciones de Ana Tijoux, JEM, Lord Sucio, Angus'D y Audigier.</p>
@@ -174,6 +180,11 @@
                 </ul>
             </nav>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- JavaScript de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

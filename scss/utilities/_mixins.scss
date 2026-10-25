@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+// Estilos que comparten el encabezado y el pie de página
+@mixin fondo-header-footer($fondo: $color-tarjeta, $relleno: $espaciado) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $relleno;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $relleno;
+    background-color: $fondo;
+    background-image: url("../img/portada-da-knowledge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
