@@ -1,25 +1,29 @@
 # Jonas Sanche
 
-Proyecto educativo de un sitio web dedicado a la música y trayectoria de Jonas Sanche.
+Sitio web educativo sobre la música, trayectoria y presentaciones del rapero chileno Jonas Sanche. El proyecto reúne cinco páginas y aplica los contenidos estudiados durante el curso.
 
 ## Páginas
 
-- **Inicio:** presentación del artista, galería, videoclip y contacto profesional.
+- **Inicio:** presentación, galería con carrusel y videoclip.
 - **Sobre Jonas:** biografía, trayectoria y colaboraciones.
-- **Música:** discografía con enlaces a Spotify y Apple Music.
-- **Detrás de la música:** documental, entrevistas y podcast.
-- **En vivo:** agenda de presentaciones y actuaciones grabadas.
+- **Música:** discografía con enlaces a plataformas musicales.
+- **Detrás de la música:** documentales, entrevistas y conversaciones.
+- **En vivo:** agenda y presentaciones grabadas.
 
-## Tecnologías
+## Tecnologías y recursos
 
-- HTML5, SCSS y CSS compilado.
-- Flexbox y CSS Grid.
-- Bootstrap mediante CDN.
+- HTML5 semántico y responsive mobile-first.
+- SCSS con variables, nesting, mixin con parámetros, `@extend` y partials.
+- CSS compilado en `styles/style.css`.
+- Flexbox, CSS Grid y breakpoints para tablet (768 px) y escritorio (1024 px).
+- Bootstrap 5 por CDN: navbar en las cinco páginas, carrusel en Inicio y tarjetas en Música.
+- Animación nativa con `@keyframes` y animaciones AOS en Música.
 - Google Fonts: Permanent Marker y Kalam.
+- Metadatos por página: título, descripción y keywords; imágenes con texto `alt`.
 
 ## Requisitos previos
 
-Se necesita **Node.js** para utilizar npm y **Sass** para compilar los estilos SCSS. Si Sass aún no está instalado, abre una terminal y ejecuta:
+Se necesita **Node.js** y **Sass** para trabajar con los estilos SCSS. Si Sass aún no está instalado, instala Node.js y ejecuta en una terminal:
 
 ```bash
 npm install -g sass
@@ -35,9 +39,9 @@ proyecto/
 │   ├── en-vivo.html
 │   ├── musica.html
 │   └── sobre-mi.html
-├── img/                   # Imágenes del sitio
+├── assets/                # Imágenes del sitio
 ├── scss/
-│   ├── main.scss          # Punto de entrada SCSS
+│   ├── main.scss          # Punto de entrada con @use
 │   ├── base/
 │   ├── components/
 │   ├── layout/
@@ -47,23 +51,22 @@ proyecto/
 └── README.md
 ```
 
-## Sitio web
+## Cómo abrir el sitio
 
-[Ver sitio publicado](https://octavarium146.github.io/Proyecto-web/)
+Abre `index.html` en un navegador. Se necesita conexión a internet para cargar Bootstrap, Google Fonts, AOS y los contenidos externos.
 
-## Bootstrap y estados interactivos
+## Dónde verificar los requisitos
 
-### Dónde revisar
+- **Navbar y Bootstrap CDN:** en cada uno de los cinco HTML. El CSS de Bootstrap está en el `<head>` y el JavaScript antes de `</body>`.
+- **Carrusel:** `index.html`, sección «Jonas Sanche en imágenes»; prueba las flechas para cambiar de imagen.
+- **Tarjetas:** `pages/musica.html`, sección «Discografía».
+- **Estados interactivos:** `:hover`, `:focus`, `:active` y `transition` en los enlaces de navegación, botones y elementos de la galería. Se prueban con el puntero, la tecla Tab y clic.
+- **Animaciones:** animación nativa en `scss/base/_tipografia.scss`; AOS en `pages/musica.html`.
+- **Responsividad:** reglas base mobile-first y media queries en `scss/layout/_responsive.scss`.
+- **SCSS:** parciales en `scss/base/`, `scss/components/`, `scss/layout/` y `scss/utilities/`; `scss/main.scss` importa los parciales con `@use`.
 
-- **Navbar de Bootstrap:** está en `index.html`, `pages/sobre-mi.html`, `pages/musica.html`, `pages/detras-de-la-musica.html` y `pages/en-vivo.html`. En cada uno, Bootstrap CSS 5.3.8 está vinculado dentro de `<head>` antes de `styles/style.css` y el archivo `bootstrap.bundle.min.js` está antes de `</body>`. La clase `navbar-expand-lg` y el botón `navbar-toggler` permiten comprobar el menú responsivo.
-- **Carrusel de Bootstrap:** está en `index.html`, en la sección «Jonas Sanche en imágenes», con el identificador `galeria-jonas` y sus controles anterior y siguiente.
-- **Tarjetas de Bootstrap:** están en `pages/musica.html`, en la sección «Discografía», con las clases `card`, `card-img-top`, `card-title` y `card-text`.
-- **Clases propias que adaptan Bootstrap a la paleta del sitio:** `barra-principal`, `enlace`, `boton`, `control`, `galeria` y `tarjeta`. Sus estilos están en `scss/layout/_nav.scss`, `scss/components/_buttons.scss`, `scss/components/_galeria.scss` y `scss/components/_cards.scss`. El archivo `styles/style.css` contiene los estilos compilados que carga el HTML.
+## Repositorio y publicación
 
-### Cómo comprobar los criterios
-
-1. **Bootstrap en las cinco páginas:** revisa los enlaces CDN de CSS y JavaScript en los archivos HTML indicados arriba. El CSS de Bootstrap precede a la hoja propia.
-2. **Navbar responsiva:** abre una página en una ventana estrecha y comprueba que aparezca el botón de menú; presiónalo para mostrar y ocultar los enlaces. En una ventana ancha, los enlaces se muestran expandidos.
-3. **Componentes:** en Inicio, usa las flechas del carrusel para cambiar de imagen. En Música, revisa las tarjetas de discografía y sus botones.
-4. **Pseudoclases y transiciones:** en `scss/layout/_nav.scss` se encuentran `:hover`, `:focus` y `:active` para los enlaces. En `scss/components/_buttons.scss` están los estados de botones y controles; en `scss/components/_galeria.scss`, los de la galería; y en `scss/components/_cards.scss`, el estado `:hover` de las tarjetas.
-5. **Prueba interactiva:** pasa el puntero sobre enlaces, botones y tarjetas; usa `Tab` para llegar a los elementos y comprobar el estado de foco; y haz clic para observar el estado activo. Los cambios visuales usan `transition` en los estilos SCSS correspondientes, compartidos por las páginas.
+- **Repositorio público:** [GitHub](https://github.com/Octavarium146/Proyecto-web)
+- **Versión publicada actualmente:** [GitHub Pages](https://octavarium146.github.io/Proyecto-web/)
+- **Publicación requerida para el Proyecto Final:** pendiente de desplegar en Netlify o Vercel. Se agregará aquí el enlace cuando esté publicada.

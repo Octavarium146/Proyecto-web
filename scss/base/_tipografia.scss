@@ -14,6 +14,22 @@
     line-height: 1.5;
 }
 
+@keyframes aparecer-texto {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.pagina-musica main .titulo-principal, body.pagina-musica main .titulo-seccion, body.pagina-musica main .subtitulo, body.pagina-musica main .titulo-disco, body.pagina-musica main .parrafo, body.pagina-musica main .lista, body.pagina-musica main .leyenda {
+    animation: aparecer-texto 0.7s ease-out;
+}
+
 .titulo-principal {
     font-size: 2.5rem;
 }
