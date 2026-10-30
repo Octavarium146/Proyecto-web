@@ -67,6 +67,5 @@ Abre `index.html` en un navegador. Se necesita conexión a internet para cargar 
 
 ## Repositorio y publicación
 
-- **Repositorio público:** [GitHub](https://github.com/Octavarium146/Proyecto-web)
 - **Sitio publicado en Netlify:** [proyectojonassanche.netlify.app](https://proyectojonassanche.netlify.app/)
 - **Versión en GitHub Pages:** [octavarium146.github.io/Proyecto-web](https://octavarium146.github.io/Proyecto-web/)
