@@ -8,7 +8,7 @@
         grid-template-areas:
             "introduccion introduccion"
             "historia datos"
-            "foto foto";
+            "foto video";
     }
     .perfil-jonas {
         grid-template-areas:
@@ -32,7 +32,7 @@
         grid-template-areas:
             "introduccion introduccion"
             "historia datos"
-            "foto foto";
+            "foto video";
     }
     .discos, .agenda {
         grid-template-columns: repeat(3, 1fr);

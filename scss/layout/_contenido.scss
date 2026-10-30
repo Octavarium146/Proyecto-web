@@ -24,7 +24,8 @@
         "introduccion"
         "historia"
         "datos"
-        "foto";
+        "foto"
+        "video";
 }
 
 .inicio-introduccion {
@@ -41,6 +42,10 @@
 
 .inicio-foto {
     grid-area: foto;
+}
+
+.inicio-video {
+    grid-area: video;
 }
 
 .seccion {

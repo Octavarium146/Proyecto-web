@@ -166,7 +166,7 @@ body.pagina-musica main .titulo-principal, body.pagina-musica main .titulo-secci
 }
 
 .presentacion {
-  grid-template-areas: "introduccion" "historia" "datos" "foto";
+  grid-template-areas: "introduccion" "historia" "datos" "foto" "video";
 }
 
 .inicio-introduccion {
@@ -183,6 +183,10 @@ body.pagina-musica main .titulo-principal, body.pagina-musica main .titulo-secci
 
 .inicio-foto {
   grid-area: foto;
+}
+
+.inicio-video {
+  grid-area: video;
 }
 
 .seccion {
@@ -356,7 +360,7 @@ body.pagina-musica main .titulo-principal, body.pagina-musica main .titulo-secci
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .presentacion {
-    grid-template-areas: "introduccion introduccion" "historia datos" "foto foto";
+    grid-template-areas: "introduccion introduccion" "historia datos" "foto video";
   }
   .perfil-jonas {
     grid-template-areas: "biografia retrato" "trayectoria colaboraciones";
@@ -374,7 +378,7 @@ body.pagina-musica main .titulo-principal, body.pagina-musica main .titulo-secci
   }
   .presentacion {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas: "introduccion introduccion" "historia datos" "foto foto";
+    grid-template-areas: "introduccion introduccion" "historia datos" "foto video";
   }
   .discos, .agenda {
     grid-template-columns: repeat(3, 1fr);
