@@ -8,7 +8,7 @@ Sitio web educativo sobre la música, trayectoria y presentaciones del rapero ch
 - **Sobre Jonas:** biografía, trayectoria y colaboraciones.
 - **Música:** discografía con enlaces a plataformas musicales.
 - **Detrás de la música:** documentales, entrevistas y conversaciones.
-- **En vivo:** agenda y presentaciones grabadas.
+- **En vivo:** sesiones y presentaciones grabadas, con enlace a los anuncios oficiales.
 
 ## Tecnologías y recursos
 
@@ -68,5 +68,5 @@ Abre `index.html` en un navegador. Se necesita conexión a internet para cargar 
 ## Repositorio y publicación
 
 - **Repositorio público:** [GitHub](https://github.com/Octavarium146/Proyecto-web)
-- **Versión publicada actualmente:** [GitHub Pages](https://octavarium146.github.io/Proyecto-web/)
-- **Publicación requerida para el Proyecto Final:** pendiente de desplegar en Netlify o Vercel. Se agregará aquí el enlace cuando esté publicada.
+- **Sitio publicado en Netlify:** [proyectojonassanche.netlify.app](https://proyectojonassanche.netlify.app/)
+- **Versión en GitHub Pages:** [octavarium146.github.io/Proyecto-web](https://octavarium146.github.io/Proyecto-web/)
